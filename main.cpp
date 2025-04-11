@@ -1,10 +1,12 @@
 #include <stdio.h>
 
+// 一般的な時給
 int General(int time) {
 
 	return time * 1072;
 }
 
+// 再帰的な時給計算
 int Recursive(int time,int salary = 100) {
 	if (time <= 1) {
 		return salary;
