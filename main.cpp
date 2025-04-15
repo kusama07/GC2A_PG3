@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-typedef void (*PFunc)();
+typedef void (*PFunc)(void);
 
 int dice = 0;
 int flag = 0;
@@ -45,14 +45,20 @@ void Answer() {
 void SetTimeout(PFunc p, int second) {
 	Sleep(second * 1000);
 
+	p(&second);
 };
 
 int main() {
-	PFunc p = Result;
-	Result();
-	InputAns();
+	PFunc p;
+	
+	p = Result;
+	p();
+	
+	p = InputAns;
+	p();
+
 	SetTimeout(p, 3);
-	Answer();
+	Answer();*/
 
 	return 0;
 }
