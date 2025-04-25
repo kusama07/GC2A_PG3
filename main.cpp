@@ -57,11 +57,7 @@ int main() {
    printf("半（奇数）の場合 1 , 丁（偶数）の場合 2 を入力 : ");
    // 乱数を生成して、正解か不正解かを判定
    DiceFunc diceResult = [correct, incorrect](bool* isCorrect) {
-       if (*isCorrect) {
-           correct(isCorrect);
-       } else {
-           incorrect(isCorrect);
-       }
+       SetTimeout(isCorrect ? correct : incorrect, 3);
    };
 
    dice(diceResult);
