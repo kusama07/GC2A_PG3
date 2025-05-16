@@ -13,7 +13,6 @@ Rectangle::~Rectangle()
 void Rectangle::Size()
 {
 	ans_ = width_ * height_;
-	printf("Rectangle Area: %f\n", ans_);
 }
 
 void Rectangle::Draw()
