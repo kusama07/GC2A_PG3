@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include "Circle.h"
+#include "Rectangle.h"
+#include "IShape.h"
 
 int main() {
 
-	char str[] = "あいえお";
-	printf("%s", str);
 
 	return 0;
 }
