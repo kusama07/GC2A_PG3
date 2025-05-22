@@ -8,6 +8,7 @@ using namespace std;
 
 int main() {
 	// 山手線の駅名
+	// atringを使用しない
 	list<string> stationList = {
 		"Tokyo","Kanda","Akihabara","Okachimachi","Ueno","Uguisudani","Nippori",
 		"Tabata","Komagome","Sugamo","Otsuka","Ikebukuro","Mejiro","Takadanobaba",
