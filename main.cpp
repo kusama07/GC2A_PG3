@@ -10,12 +10,12 @@ using namespace std;
 int main() {
 	
 	vector<string> idList = {
-		"k022@0032",
-		"k022@0038",
-		"k022@0002",
-		"k022@0029",
-		"k022@0100",
-		"k022@0012",
+		"k022@0032@g.neec.ac.jp",
+		"k022@0038@g.neec.ac.jp",
+		"k022@0002@g.neec.ac.jp",
+		"k022@0029@g.neec.ac.jp",
+		"k022@0100@g.neec.ac.jp",
+		"k022@0012@g.neec.ac.jp",
 	};
 
 	// 昇順に並べ替え
