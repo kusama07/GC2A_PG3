@@ -9,12 +9,10 @@ using namespace std;
 int main() {
 	// 山手線の駅名
 	// atringを使用しない
-	list<string> stationList = {
-		"Tokyo","Kanda","Akihabara","Okachimachi","Ueno","Uguisudani","Nippori",
-		"Tabata","Komagome","Sugamo","Otsuka","Ikebukuro","Mejiro","Takadanobaba",
-		"Shin-Okubo","Shinjuku","Yoyogi","Harajuku","Shibuya","Ebisu","Meguro",
-		"Gotanda","Osaki","Shinagawa","Tamachi","Hamamatsucho","Shimbashi","Yurakucho",
+	list <const char*> stationList{
+		"Tokyo", "Kanda", "Akihabara", "Okachimachi", "Ueno", "Uguisudani", "Nippori", "Tabata", "Komagome", "Sugamo", "Otsuka", "Ikebukuro", "Mejiro", "Takadanobaba", "Sin-Okubo", "Shinjuku", "Yoyogi", "Harajuku", "Shibuya", "Ebisu", "Meguro", "Gotanda", "Osaki", "Sinagawa", "Tamachi", "Hamamatsucho", "Shimbashi", "Yurakucho"
 	};
+
 
 	// 1970年の山手線の駅名を表示
 	cout << "1970年\n";
@@ -23,7 +21,7 @@ int main() {
 	}
 
 	// 西日暮里を追加
-	for (list<string>::iterator itr = stationList.begin(); itr != stationList.end(); ++itr) {
+	for (list<const char*>::iterator itr = stationList.begin(); itr != stationList.end(); ++itr) {
 		if (*itr == "Tabata") {
 			itr = stationList.insert(itr, "Nishi-Nippori");
 			++itr;
@@ -36,7 +34,7 @@ int main() {
 	}
 
 	// 高輪ゲートウェイを追加
-	for (list<string>::iterator itr = stationList.begin(); itr != stationList.end(); ++itr) {
+	for (list<const char*>::iterator itr = stationList.begin(); itr != stationList.end(); ++itr) {
 		if (*itr == "Tamachi") {
 			itr = stationList.insert(itr, "Takanawa Gateway");
 			++itr;
